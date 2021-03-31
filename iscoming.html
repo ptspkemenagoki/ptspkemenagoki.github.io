@@ -36,49 +36,7 @@
     </div>
   </div>
 </div>
-<!-- TAMU -->
-<div class="modal fade" id="staticBackdroptamu" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header bg-primary">
-        <h5 class="modal-title text-light" id="staticBackdropLabeltamu">
-          <i class="fa fa-label"></i>BUKU TAMU KEMENAG OKI</h5>
-        <button type="button" class="btn-close text-light" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-     <div class="card">
-  <div class="card-body">
-    <p class="card-text">Silakan isi Biodata</p>
 
-<form name="buku-tamu">
-
-<div class="mb-3">
-  <label class="form-label" >Nama Lengkap</label>
-  <input type="text" name="nama" class="form-control" required="">
-</div>
-<div class="mb-3">
-  <label  class="form-label">Kontak Hp / WA</label>
-  <input type="number" name="telepon" class="form-control" required="">
-</div>
-<div class="mb-3">
-  <label class="form-label">Pejabat Yang Akan ditemui</label>
-  <input type="text" name="pejabat" class="form-control" required="">
-</div>
-<div class="mb-3">
-  <label class="form-label">Maksud & Tujuan</label>
-  <textarea class="form-control" name="tujuan" rows="3"></textarea>
-</div>
-
-  </div>
-</div>
-      </div>
-      <div class="modal-footer">
-        <button type="submit" class="btn btn-primary btn-success" >Simpan</button>
-      </div>
-      </form>
-    </div>
-  </div>
-</div>
 <body>
 <!-- navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary shadow-sm">
@@ -139,8 +97,8 @@ c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3
 </path></svg>
 </div>
 <img src="https://1.bp.blogspot.com/-a2xyjeeFe2M/YF9oyeoMfwI/AAAAAAAABc0/2YqOpnDfV5EcaF6XjvHVk7ywn5jwohvOgCLcBGAsYHQ/s0/1.png" class="rounded mx-auto d-block" alt="logoKemenag" />
-<h1>PTSP PLUS</h1>
-<p class="lead">Kementerian Agama Kabupaten OKI</p>
+<h1>LKH KEMENAG OKI</h1>
+<p class="lead">Laporan Kinerja Harian Kementerian Agama Kabupaten OKI</p>
 <!--Waves Container-->
 <div>
 <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -166,17 +124,42 @@ viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
 <div class="container">
   <div class="card">
   <div class="card-header bg-primary text-light text-center">
-   LKH (laporan Kinerja Harian )
+   AKAN SEGERA DI LAUNCHING
   </div>
 <div class="card-body">
-    <!-- menu 1 -->
-<div class="container">
-  <div class="row">
-   Aplikasi LKH (Laporan Kinerja Harian )<br> Pegawai Kementerian Agama Kabupaten OKI <br>Akan Segera Hadir
-  </div>
-</div>
-</div>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
 
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</div>
+</div>
+	</div>
 
 
 <footer class="stm-footer-wrapper" id="dani-trueurl" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
