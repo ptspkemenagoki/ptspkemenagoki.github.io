@@ -1,8 +1,10 @@
 body{
 font-family: 'Quicksand', sans-serif;
 }
+.nav-link{color:#009b4c; }
+.nav-link hover{color:#11ce9d; }
 .navbar {
-    border-bottom: 1px solid #ffc107;}
+    border-bottom: 2px solid #ffc107;}
 .navbar-dark .navbar-nav .nav-link {
     color: hsla(0,0%,100%,.5);
 } 
