@@ -82,7 +82,7 @@
 </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger " data-bs-dismiss="modal">Tutup</button>
+        <button type="button" class="btn btn-danger d-none btn-batal " data-bs-dismiss="modal">Tutup</button>
         <button type="submit" class="btn btn-success btn-kirim" >Simpan</button>
 
         <button class="btn btn-success text-light btn-proses d-none" >
@@ -427,6 +427,7 @@ viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
   const btnKirim = document.querySelector('.btn-kirim');
   const btnProses = document.querySelector('.btn-proses');
   const myData = document.querySelector('.my-data');
+  const btnBatal = document.querySelector('.btn-batal');
 
   form.addEventListener('submit', e => {
     e.preventDefault()
@@ -439,6 +440,7 @@ viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
     btnProses.classList.toggle('d-none')
     btnKirim.classList.toggle('d-none')
     myData.classList.toggle('d-none')
+    btnBatal.classList.toggle('d-none')
     form.reset();
     })
       .catch(error => console.error('Error!', error.message))
