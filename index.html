@@ -67,20 +67,34 @@
 </div>
 <div class="mb-3">
   <label  class="form-label">Telepon</label>
-  <input type="number" name="telepon" class="form-control">
+  <input type="number" name="telepon" class="form-control" required="">
 </div>
+<!-- 
 <div class="mb-3">
   <label class="form-label">Pejabat Yang Akan ditemui</label>
   <input type="text" name="pejabat" class="form-control" required="">
 </div>
+ -->
 <div class="mb-3">
   <label class="form-label">Yang Akan ditemui</label>
-<select class="form-select" aria-label=".form-select-lg example">
-  <option selected>Pilih</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
+<select class="form-select" name="pejabat" aria-label=".form-select-lg example">
+  <option selected disabled="">Pilih</option>
+  <option value="KEPALA KANTOR">KEPALA KANTOR</option>
+  <option value="KA.SUBBAG TU">KA.SUBBAG TU</option>
+  <option value="KASI BIMAS">KASI BIMAS</option>
+  <option value="KASI PENMAD">KASI PENMAD</option>
+  <option value="PENY. HAJI & UMRAH">PENY. HAJI & UMRAH</option>
+  <option value="KASI PAIS">KASI PAIS</option>
+  <option value="KASI PD.PONPES">KASI PD.PONPES</option>
+  <option value="PENY. SYARIAH">PENY. SYARIAH</option>
+  <option value="PENGAWAS PAI">PENGAWAS PAI</option>
+  <option value="PENGAWAS MADRASAH">PENGAWAS MADRASAH</option>
+  <option value="LAINNYA" class="myclass">LAINNYA</option>
 </select>
+</div>
+<div class="mb-3 d-none">
+  <label class="form-label">Sebutkan</label>
+  <input type="text" name="pejabat" class="form-control" required="">
 </div>
 <div class="mb-3">
   <label class="form-label">Maksud & Tujuan</label>
@@ -162,8 +176,8 @@ c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3
 </path></svg>
 </div>
 <img src="https://1.bp.blogspot.com/-a2xyjeeFe2M/YF9oyeoMfwI/AAAAAAAABc0/2YqOpnDfV5EcaF6XjvHVk7ywn5jwohvOgCLcBGAsYHQ/s0/1.png" class="rounded mx-auto d-block" alt="logoKemenag" />
-<h2>PTSP PLUS</h2>
-<p class="lead">KEMENAG KAB OKI</p>
+<h1>PTSP PLUS</h1>
+<p class="lead">Kementerian Agama Kabupaten OKI</p>
 <!--Waves Container-->
 <div>
 <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -189,12 +203,13 @@ viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
 <div class="container">
   <div class="card">
   <div class="card-header bg-primary text-light text-center">
-    MENU  LAYANAN
+    MENU  LAYANAN 
   </div>
 <div class="card-body">
     <!-- menu 1 -->
 <div class="container">
   <div class="row">
+
     <div class="col-sm-6">
       <div class="accordion accordion-flush" id="accordionFlushExample">
          <div class="accordion-item">
@@ -225,25 +240,24 @@ viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body"> 
         <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#">1.</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">1.</a></li>
         <li class="nav-item"><a class="nav-link" href="#">2.</a></li>
       </ul>
       </div>
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingThree">
+               <h2 class="accordion-header" id="flush-headingThree">
       <button class="accordion-button collapsed text-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        Pendidikan Madrasah
+        Penmad
       </button>
     </h2>
     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="#">1. BOS</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">2. Emis</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#">2. Emis</a></li>
         <li class="nav-item"><a class="nav-link" href="#">3. Simpatika</a></li>
-         <li class="nav-item"><a class="nav-link" href="#">4. Ijin Opersional</a></li>
       </ul>
       </div>
     </div>
@@ -265,8 +279,10 @@ viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
     </div>
     </div>
   </div>
+
 </div>
     <!-- menu 2 -->
+
 <div class="col-sm-6">
 <div class="accordion accordion-flush" id="accordionFlushExample1">
   <div class="accordion-item">
@@ -334,6 +350,7 @@ viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
 </div>
 
 </div>
+
 </div>
 </div>
   </div>
@@ -375,11 +392,11 @@ viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
       <p class="card-text">Sistem Informasi Elektronik Kinerja ASN Kementerian Agama RI.</p>
     </div>
     <div class="card-footer">
-      <small class="text-muted">  <a href="#" class="btn btn-primary">Ke Aplikasi</a></small>
+      <small class="text-muted">  <a href="https://sieka.kemenag.go.id/" target='blank' class="btn btn-primary">Ke Aplikasi</a></small>
     </div>
   </div>
     <div class="card">
-    <img src="images/all-in.jpg" class="card-img-top img-thumbnail" alt="sieka">
+    <img src="images/all-in.jpg" class="card-img-top img-thumbnail" alt="all in">
     <div class="card-body">
       <h5 class="card-title">Lainnya</h5>
       <p class="card-text">All In Kemenag OKI</p>
@@ -429,7 +446,6 @@ viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
 </div>
 </footer>
 
-
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbw5N2BlHbSnfKtwcjvUnscG77-AMWG6HRMRNFn_2-fEEGp3lA18R_LxfHAjuV-r7hZR/exec'
   const form = document.forms['buku-tamu']
@@ -437,6 +453,7 @@ viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
   const btnProses = document.querySelector('.btn-proses');
   const myData = document.querySelector('.my-data');
   const btnBatal = document.querySelector('.btn-batal');
+  
 
   form.addEventListener('submit', e => {
     e.preventDefault()
