@@ -66,8 +66,12 @@
   <input type="text" name="nama" class="form-control" required="">
 </div>
 <div class="mb-3">
+  <label class="form-label">Alamat</label>
+   <textarea class="form-control" name="alamat" rows="2"></textarea>
+</div>
+<div class="mb-3">
   <label  class="form-label">Telepon</label>
-  <input type="number" name="telepon" class="form-control" required="">
+  <input type="number" name="telepon" class="form-control">
 </div>
 <!-- 
 <div class="mb-3">
@@ -79,22 +83,18 @@
   <label class="form-label">Yang Akan ditemui</label>
 <select class="form-select" name="pejabat" aria-label=".form-select-lg example">
   <option selected disabled="">Pilih</option>
-  <option value="KEPALA KANTOR">KEPALA KANTOR</option>
-  <option value="KA.SUBBAG TU">KA.SUBBAG TU</option>
-  <option value="KASI BIMAS">KASI BIMAS</option>
-  <option value="KASI PENMAD">KASI PENMAD</option>
-  <option value="PENY. HAJI & UMRAH">PENY. HAJI & UMRAH</option>
-  <option value="KASI PAIS">KASI PAIS</option>
-  <option value="KASI PD.PONPES">KASI PD.PONPES</option>
-  <option value="PENY. SYARIAH">PENY. SYARIAH</option>
-  <option value="PENGAWAS PAI">PENGAWAS PAI</option>
-  <option value="PENGAWAS MADRASAH">PENGAWAS MADRASAH</option>
-  <option value="LAINNYA" class="myclass">LAINNYA</option>
+  <option value="Kepala Kantor">Kepala Kantor</option>
+  <option value="Ka.Subbag TU">Ka.Subbag TU</option>
+  <option value="Kasi Bimas">Kasi Bimas</option>
+  <option value="Kasi Penmad">Kasi Penmad</option>
+  <option value="Peny. Haji & Umrah">Peny. Haji & Umrah</option>
+  <option value="Kasi Pais">Kasi Pais</option>
+  <option value="Kasi PD.Ponpes">Kasi PD.Ponpes</option>
+  <option value="Peny. Syariah">Peny. Syariah</option>
+  <option value="Pengawas Pai">Pengawas Pai</option>
+  <option value="Pengawas Madrasah">Pengawas Madrasah</option>
+  <option value="Lainnya">Lainnya</option>
 </select>
-</div>
-<div class="mb-3 d-none">
-  <label class="form-label">Sebutkan</label>
-  <input type="text" name="pejabat" class="form-control" required="">
 </div>
 <div class="mb-3">
   <label class="form-label">Maksud & Tujuan</label>
@@ -392,11 +392,11 @@ viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
       <p class="card-text">Sistem Informasi Elektronik Kinerja ASN Kementerian Agama RI.</p>
     </div>
     <div class="card-footer">
-      <small class="text-muted">  <a href="https://sieka.kemenag.go.id/" target='blank' class="btn btn-primary">Ke Aplikasi</a></small>
+      <small class="text-muted">  <a href="#" class="btn btn-primary">Ke Aplikasi</a></small>
     </div>
   </div>
     <div class="card">
-    <img src="images/all-in.jpg" class="card-img-top img-thumbnail" alt="all in">
+    <img src="images/all-in.jpg" class="card-img-top img-thumbnail" alt="sieka">
     <div class="card-body">
       <h5 class="card-title">Lainnya</h5>
       <p class="card-text">All In Kemenag OKI</p>
@@ -453,7 +453,6 @@ viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
   const btnProses = document.querySelector('.btn-proses');
   const myData = document.querySelector('.my-data');
   const btnBatal = document.querySelector('.btn-batal');
-  
 
   form.addEventListener('submit', e => {
     e.preventDefault()
