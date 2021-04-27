@@ -50,10 +50,6 @@ viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
 <!--Header ends-->
 
 
-
-
-
-
 <!-- FORM END -->
 <footer class="stm-footer-wrapper" id="dani-trueurl" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
 <div class="mt-footer" role="contentinfo">
@@ -62,17 +58,7 @@ viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
  © <script type="text/javascript">var creditsyear = new Date();document.write(creditsyear.getFullYear());</script>KEMENAG OKI
 </div>
 </footer>
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzOg_KQ4bGkgq3Vof5PUmte36guNeth6IbKbJ9KPYUEvhosT2qtTeerYq0Ru3vWn6YOrA/exec'
-  const form = document.forms['pip-2021']
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>	
 </body>
 </html>
