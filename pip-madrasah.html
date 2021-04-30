@@ -52,39 +52,30 @@ viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
 	    	FORM KONFIRMASI PENCAIRAN DANA PIP TAHAP 1 TAHUN 2021
 	  	</div>
 		<div class="card-body">
-			<div class="alert alert-success alert-dismissible fade show my-data" role="alert">
-			  <p>Terima Kasih Sudah Melakukan Konfirmasi.</p>
+			<div class="my-alert alert alert-success alert-dismissible fade show my-data d-none" role="alert">
+			   <strong> Terimakasih...</strong> Sudah Melakukan Konfirmasi.
 			  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 			</div>
 
-		<form>
+		<form name='pipkonfirmasi'>
 			<div class="mb-3">
-			  <label  class="form-label">Nama Madrasah</label>
-			  <input type="text" class="form-control">
+			  <label  class="form-label">NAMA MADRASAH</label>
+			  <input type="text" name="madrasah" class="form-control" required="">
 			</div>
 
 			<div class="mb-3">
-			  <label  class="form-label">Jumlah Siswa Penerima</label>
-			  <input type="number" class="form-control">
+			  <label  class="form-label">NSM</label>
+			  <input type="number" name="nsm" class="form-control" required="">
 			</div>
 
-			<div class="mb-3">
-			  <label  class="form-label">Jumlah Dana</label>
-			  <input type="number" class="form-control">
-			</div>
-		</form>
-		
 			<div class="d-grid gap-2 col-4 mx-auto">
-			  <button class="btn btn-primary" type="button">Kirim Konfirmasi</button>
-			  <button class="btn btn-danger" type="button" disabled>
+			  <button class="btn btn-primary btn-kirim" type="submit">Kirim Konfirmasi</button>
+			  <button class="btn btn-primary btn-loading d-none" type="button" disabled>
   				<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
   				Loading...
 			  </button>
-
-
-
 			</div>
-
+		</form>
 		</div>
 	</div>
 </div>
@@ -95,10 +86,39 @@ viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
 <div class="mt-footer" role="contentinfo">
 <ul class="dani-circle">
 <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
- © <script type="text/javascript">var creditsyear = new Date();document.write(creditsyear.getFullYear());</script>KEMENAG OKI
+ © <script type="text/javascript">var creditsyear = new Date();document.write(creditsyear.getFullYear());</script>PENMAD KEMENAG OKI
 </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>	
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwS4GbNEArijdkwR5AexGSFa09zimTEtaZibkpelwjCbhKhwwEOZ5W9Gavcij81VUY82w/exec'
+  const form = document.forms['pipkonfirmasi']
+  const btnKirim = document.querySelector('.btn-kirim');
+   const btnLoading = document.querySelector('.btn-loading');
+    const myAlert = document.querySelector('.my-alert');
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    
+btnLoading.classList.toggle('d-none');
+btnKirim.classList.toggle('d-none');
+
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+
+btnLoading.classList.toggle('d-none');
+btnKirim.classList.toggle('d-none');
+
+myAlert.classList.toggle('d-none')
+
+form.reset();
+      	console.log('Success!', response)})
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+	
 </body>
 </html>
