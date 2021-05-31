@@ -6,7 +6,7 @@ body{background:#fff;font-family:'Quicksand',sans-serif;font-size:16px;font-weig
 .navbar-dark .navbar-nav .nav-link {
     color: hsla(0,0%,100%,.5);
 } 
-.bg-primary{background:url(images/nav.png); background-color: #009b4c;}
+.btn-primary{background:url(images/nav.png); background-color: #009b4c;}
 
 .dropdown-menu {background:url(nav.ong); #009b4c;}
 .quickedit,#ContactForm1,#ContactForm1 br,#PopularPosts1 .item-snippet,.not-multi-authorindz .entry-meta .authorindz,#blog-pager .home-link{display:none}
