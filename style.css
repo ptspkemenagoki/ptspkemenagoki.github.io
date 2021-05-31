@@ -43,6 +43,9 @@ display:inline-block;
 vertical-align: middle;
 display: none;
 }
+
+.btn-primary : hover { color:#1aa55e;}
+
 .inner-header {
 height:5vh;
 width:100%;
