@@ -1,4 +1,10 @@
 body{background:#fff;font-family:'Quicksand',sans-serif;font-size:16px;font-weight:500;text-align:left;color:#000;margin:0;padding:0;line-height:normal}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height:8px;
+}
+
 .nav-link{color:#009b4c; }
 .nav-link hover{color:#11ce9d; }
 .navbar {
@@ -93,6 +99,9 @@ background-color: white;
 .bg-c-pink {
     background: linear-gradient(45deg,#FF5370,#ff869a);
 }
+
+
+
 
 
 .card {
