@@ -73,14 +73,19 @@
   <label  class="form-label">Telepon</label>
   <input type="number" name="telepon" class="form-control">
 </div>
-<!-- 
+<div class="mb-3">
+  <label  class="form-label">Pekerjaan</label>
+  <input type="number" name="pekerjaan" class="form-control">
+</div>
+
+	<!-- 
 <div class="mb-3">
   <label class="form-label">Pejabat Yang Akan ditemui</label>
   <input type="text" name="pejabat" class="form-control" required="">
 </div>
  -->
 <div class="mb-3">
-  <label class="form-label">Yang Akan ditemui</label>
+  <label class="form-label">Pejabat / Pegawai Yang Akan ditemui</label>
 <select class="form-select" name="pejabat" aria-label=".form-select-lg example">
   <option selected disabled="">Pilih</option>
   <option value="Kepala Kantor">Kepala Kantor</option>
@@ -90,15 +95,22 @@
   <option value="Subbag Umum">Umum</option>
   <option value="Kasi Bimas">Kasi Bimas</option>
   <option value="Kasi Penmad">Kasi Penmad</option>
-  <option value="Peny. Haji & Umrah">Peny. Haji & Umrah</option>
   <option value="Kasi Pais">Kasi Pais</option>
   <option value="Kasi PD.Ponpes">Kasi PD.Ponpes</option>
   <option value="Peny. Syariah">Zakat Wakaf</option>
-  <option value="Pengawas Pai">Pengawas Pai</option>
-  <option value="Pengawas Madrasah">Pengawas Madrasah</option>
-  <option value="Lainnya">Lainnya</option>
+  <option id="pegawai">Pegawai</option>
 </select>
 </div>
+<div class="mb-3 d-none" id="namaPegawai">
+  <label class="form-label">Nama Pegawai</label>
+  <textarea class="form-control" name="Nama Pegawai" rows="3"></textarea>
+</div>
+<script>
+	$("#pegawai").click(function() {
+    $("#namaPegawai").show();
+};
+</script>
+	
 <div class="mb-3">
   <label class="form-label">Maksud & Tujuan</label>
   <textarea class="form-control" name="tujuan" rows="3"></textarea>
