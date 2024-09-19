@@ -44,13 +44,6 @@
     </div>
   </div>
 </div>
-
-	<script type="text/javascript">
-    $(window).on('load', function() {
-        $('#staticBackdroptamu').modal('show');
-    });
-</script>
-
 	
 <!-- TAMU -->
 <div class="modal fade" open="true" id="staticBackdroptamu" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -82,12 +75,19 @@
   <input type="number" name="telepon" class="form-control">
 </div>
 <div class="mb-3">
-  <label  class="form-label">Pekerjaan</label>
-  <input type="number" name="pekerjaan" class="form-control">
+  <label class="form-label">Pekerjaan</label>
+<select class="form-select" name="pekerjaan" aria-label=".form-select-lg example">
+  <option selected disabled="">Pilih</option>
+  <option value="ASN">ASN</option>
+  <option value="TNI">TNI</option>
+  <option value="POLRI">Polri</option>
+  <option value="LSM">LSM</option>
+  <option value="Lainnya">Lainnya</option>
+</select>
 </div>
 
 <div class="mb-3">
-  <label class="form-label">Pejabat / Pegawai Yang Akan ditemui</label>
+<label class="form-label">Pejabat / Pegawai Yang Akan ditemui</label>
 <select class="form-select" name="pejabat" aria-label=".form-select-lg example">
   <option selected disabled="">Pilih</option>
   <option value="Kepala Kantor">Kepala Kantor</option>
