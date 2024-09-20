@@ -18,12 +18,105 @@
 			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 		  </div>
 		  <div class="modal-body">
-			...
+		<!--start-->
+			  <div class="modal-body">
+     <div class="card">
+  <div class="card-body">
+<div class="alert alert-success alert-dismissible fade show d-none my-data" role="alert">
+  <p> Data tamu berhasil disimpan.</p>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div> 
+
+<form name="buku-tamu">
+<div class="mb-3">
+  <label class="form-label" >Nama Lengkap</label>
+  <input type="text" name="nama" class="form-control" required="">
+</div>
+<div class="mb-3">
+  <label class="form-label">Alamat</label>
+<select class="form-select" name="kecamatan" aria-label=".form-select-lg example">
+  <option selected disabled="">Pilih Kecamatan</option>
+  <option value="Kayuagung">Kayuagung</option>
+  <option value="Sp.Padang">Sp. Padang</option>
+  <option value="Pampangan">Pampangan</option>
+  <option value="Tulung Selapan">Tulung Selapan</option>
+  <option value="Tanjung Lubuk">Tanjung Lubuk</option>
+	<option value="Pedamaran">Pedamaran</option>
+	<option value="Mesuji">Mesuji</option>
+	<option value="Jejawi">Jejawi</option>
+	<option value="Air Sugihan">Air Sugihan</option>
+	<option value="Lempuing">Lempuing</option>
+	<option value="Sungai Menang">Sungai Menang</option>
+	<option value="Cengal">Cengal</option>
+	<option value="Pedamaran Timur">Pedamaran Timur</option>
+	<option value="Pangkalan Lampam">Pangkalan Lampam</option>
+	<option value="Teluk Gelam">Teluk Gelam</option>
+	<option value="Lempuing Jaya">Lempuing Jaya</option>
+	<option value="Mesuji Raya">Mesuji Raya</option>
+	<option value="Mesuji Makmur">Mesuji Makmur</option>
+</select>
+</div>
+<div class="mb-3">
+  <label  class="form-label">Nama Desa</label>
+  <input type="text" name="desa" class="form-control">
+</div>
+<div class="mb-3">
+  <label  class="form-label">NO HP/WA</label>
+  <input type="number" name="telp" class="form-control">
+</div>
+<div class="mb-3">
+<label class="form-label">Pekerjaan</label>
+<select class="form-select" name="pekerjaan" aria-label=".form-select-lg example">
+  <option selected disabled="">Pilih</option>
+  <option value="ASN">ASN</option>
+  <option value="TNI">TNI</option>
+  <option value="POLRI">POLRI</option>
+  <option value="LSM">LSM</option>
+  <option value="Lainnya">LAINNYA</option>
+</select>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Pejabat/Pegawai Yang Akan ditemui</label>
+<select class="form-select" name="yangditemui" aria-label=".form-select-lg example">
+  <option selected disabled="">Pilih</option>
+  <option value="Kepala Kantor">Kepala Kantor</option>
+  <option value="Ka.Subbag TU">Ka.Subbag TU</option>
+  <option value="Kasi Bimas">Kasi Bimas</option>
+  <option value="Kasi Penmad">Kasi Penmad</option>
+  <option value="Kasi Pais">Kasi Pais</option>
+  <option value="Kasi PD.Ponpes">Kasi PD.Ponpes</option>
+  <option value="Peny. Zakat Wakaf">Zakat Wakaf</option>
+  <option value="Pegawai">Pegawai</option>
+</select>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Nama Pegawai Yang ditemui</label>
+<input type="text" class="form-control" name="namapegawai"></input>
+</div>
+	
+<div class="mb-3">
+  <label class="form-label">Maksud & Tujuan</label>
+  <textarea class="form-control" name="tujuan" rows="3"></textarea>
+</div>
+
+</div>
+</div>
+
+</div>
+			  <!--end-->
+			  
 		  </div>
 		  <div class="modal-footer">
-			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-			<button type="button" class="btn btn-primary">Simpan Data</button>
+			        <button type="button" class="btn btn-danger d-none btn-batal " data-bs-dismiss="modal">Tutup</button>
+        <button type="submit" class="btn btn-success btn-kirim" >Simpan Data</button>
+
+        <button class="btn btn-success text-light btn-proses d-none" >
+        <span class="spinner-border spinner-border-sm "></span>Sedang Diproses...
+    </button>
 		  </div>
+			</form>
 		</div>
 	  </div>
 	</div>
