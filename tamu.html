@@ -124,5 +124,30 @@
 var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
 myModal.show()
 </script>
+	<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwIOLKKGErs4rSi4KepJFhDxTIFrRE7V5mKx7ir_QN9sORA6F_IPd83zzC5iUcikeNl/exec'
+  const form = document.forms['buku-tamu']
+  const btnKirim = document.querySelector('.btn-kirim');
+  const btnProses = document.querySelector('.btn-proses');
+  const myData = document.querySelector('.my-data');
+  const btnBatal = document.querySelector('.btn-batal');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    //proses 
+    btnProses.classList.toggle('d-none')
+    btnKirim.classList.toggle('d-none')
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {console.log('Success!', response)
+  //proses data 
+    btnProses.classList.toggle('d-none')
+    btnKirim.classList.toggle('d-none')
+    myData.classList.toggle('d-none')
+    btnBatal.classList.toggle('d-none')
+    form.reset();
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 </html>
