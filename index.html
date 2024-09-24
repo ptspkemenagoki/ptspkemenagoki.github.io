@@ -43,6 +43,64 @@
     .btn-primary {background-color: #1aa55e;border-color: #18d67585;}
     .navbar-dark .navbar-toggler{border: none;}
    .mol{width: 150px;padding-top: 150px;}
+    .insightly {
+			position: absolute;
+			top: 85%;
+			left: 0;
+			right: 0;
+			text-align: center;
+			margin: auto;
+			display: table
+		}
+
+		.insightly span {
+			display: block;
+			width: 15px;
+			height: 15px;
+			border-bottom: 3px dotted rgba(255,255,255,.85);
+			border-right: 3px dotted rgba(255,255,255,.85);
+			transform: rotate(45deg);
+			margin: -16px;
+			animation: animatedown 2s infinite;
+		}
+
+		.insightly span:nth-child(2) {
+			animation-delay: -0.2s;
+			border-color: #efff38
+		}
+
+		.insightly span:nth-child(3) {
+			animation-delay: -0.4s
+		}
+		{
+			position: absolute;
+			top: 85%;
+			left: 0;
+			right: 0;
+			text-align: center;
+			margin: auto;
+			display: table
+		}
+
+		.insightly span {
+			display: block;
+			width: 15px;
+			height: 15px;
+			border-bottom: 3px dotted rgba(255,255,255,.85);
+			border-right: 3px dotted rgba(255,255,255,.85);
+			transform: rotate(45deg);
+			margin: -16px;
+			animation: animatedown 2s infinite;
+		}
+
+		.insightly span:nth-child(2) {
+			animation-delay: -0.2s;
+			border-color: #efff38
+		}
+
+		.insightly span:nth-child(3) {
+			animation-delay: -0.4s
+		}
   </style>
 </head>
 
@@ -240,6 +298,10 @@
 <div class="container">
   <div class="row">
 <img src="images/logo.png" class="img-fluid p-5" alt="ptsp kemenag oki">
+
+    <div class='insightly'>
+		<a href='#batas' title='View Our Latest Theme'><span></span><span></span><span></span></a>
+	</div>
       </div>
         </div>      
     <!--Waves Container-->
@@ -264,7 +326,7 @@
   <!--Header ends-->
   <br><br>
   <!-- TAMU -->
-  <div class="container">
+  <div class="container" id="batas">
     <div class="row">
       <div class="col-md-3 mx-auto text-center">
         <a href="#staticBackdroptamu" data-bs-toggle="modal" data-bs-target="#staticBackdroptamu" class="btn btn-lg btn-primary bg-primary snoli m-4">BUKU TAMU</a>
