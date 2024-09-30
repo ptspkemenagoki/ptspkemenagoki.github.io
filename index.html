@@ -272,6 +272,11 @@
             </select>
           </div>
 
+          <div class="mb-3 Lainnya lain">
+            <label class="form-label">Jika Lainnya Sebutkan</label>
+            <input type="text" class="form-control" name="pekerjaan_lain"></input>
+          </div>
+
           <div class="mb-3">
             <label class="form-label">Yang Akan ditemui</label>
             <select class="form-select" name="yangditemui" aria-label=".form-select-lg example">
@@ -486,6 +491,22 @@
         .catch(error => console.error('Error!', error.message))
       })
     </script>
+
+ <script>
+      $(document).ready(function(){
+        $("select").change(function(){
+          $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+              $(".lain").not("." + optionValue).hide();
+              $("." + optionValue).show();
+            } else{
+              $(".lain").hide();
+            }
+          });
+        }).change();
+      });
+    </script>  
     <script>
       $(document).ready(function(){
         $("select").change(function(){
