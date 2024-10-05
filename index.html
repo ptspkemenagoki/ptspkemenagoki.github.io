@@ -254,13 +254,8 @@
             </select>
           </div>
           <div class="mb-3">
-            <label  class="form-label">Nama Desa</label>
+            <label  class="form-label">Kelurahan / Desa</label>
             <input type="text" name="desa" class="form-control">
-          </div>
-          
-            <div class="mb-3 Lainnya almt">
-            <label class="form-label">Alamat</label>
-            <textarea class="form-control" name="alamat_lain" rows="2" ></textarea>
           </div>
           
           <div class="mb-3">
@@ -307,7 +302,7 @@
 
           <div class="mb-3">
             <label class="form-label">Maksud & Tujuan</label>
-            <textarea class="form-control" name="tujuan" rows="4" ></textarea>
+            <textarea class="form-control" name="tujuan" rows="4" required=""></textarea>
           </div>
         </div>
         <div class="container">
@@ -500,21 +495,6 @@
       })
     </script>
 
-   <script>
-      $(document).ready(function(){
-        $("select").change(function(){
-          $(this).find("option:selected").each(function(){
-            var optionValue = $(this).attr("value");
-            if(optionValue){
-              $(".almt").not("." + optionValue).hide();
-              $("." + optionValue).show();
-            } else{
-              $(".almt").hide();
-            }
-          });
-        }).change();
-      });
-    </script>  
   
  <script>
       $(document).ready(function(){
