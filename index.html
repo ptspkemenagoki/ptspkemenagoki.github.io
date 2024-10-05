@@ -250,16 +250,24 @@
               <option value="Lempuing Jaya">Lempuing Jaya</option>
               <option value="Mesuji Raya">Mesuji Raya</option>
               <option value="Mesuji Makmur">Mesuji Makmur</option>
+              <option value="Lainnya almt">Lainnya</option>
             </select>
           </div>
           <div class="mb-3">
             <label  class="form-label">Nama Desa</label>
             <input type="text" name="desa" class="form-control">
           </div>
+          
+<div class="mb-3">
+            <label class="form-label">Maksud & Tujuan</label>
+            <textarea class="form-control" name="alamat_lain" rows="4" ></textarea>
+          </div>
+          
           <div class="mb-3">
             <label  class="form-label">NO HP/WA</label>
             <input type="number" name="telp" class="form-control">
           </div>
+  
           <div class="mb-3">
             <label class="form-label">Pekerjaan</label>
             <select class="form-select" name="pekerjaan" aria-label=".form-select-lg example">
@@ -492,6 +500,22 @@
       })
     </script>
 
+   <script>
+      $(document).ready(function(){
+        $("select").change(function(){
+          $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+              $(".almt").not("." + optionValue).hide();
+              $("." + optionValue).show();
+            } else{
+              $(".lain").hide();
+            }
+          });
+        }).change();
+      });
+    </script>  
+  
  <script>
       $(document).ready(function(){
         $("select").change(function(){
