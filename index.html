@@ -37,7 +37,6 @@
   <style type="text/css">
     body {
       font-family: Poppins!important;
-      font-size:12px;
     }
     .navbar{padding:0px!important;}
     .snoli{box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.5);}
@@ -48,171 +47,70 @@
     *, *:before, *:after {
       -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
     }
-    .mouse_scroll {
-      display: block;
-      margin: 0 auto;
-      width: 24px;
-      height: 100px;
-      margin-top: -50px;
-    }
-    .m_scroll_arrows
-    {
-      display: block;
-      width: 5px;
-      height: 5px;
-      -ms-transform: rotate(45deg); /* IE 9 */
-      -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-      transform: rotate(45deg);
 
-      border-right: 2px solid white;
-      border-bottom: 2px solid white;
-      margin: 0 0 3px 4px;
+/*Dekstop version*/
 
-      width: 16px;
-      height: 16px;
-    }
-    .unu
-    {
-      margin-top: 1px;
-    }
-    .unu, .doi, .trei
-    {
-      -webkit-animation: mouse-scroll 1s infinite;
-      -moz-animation: mouse-scroll 1s infinite;
-      animation: mouse-scroll 1s infinite;
-    }
-
-    .unu
-    {
-      -webkit-animation-delay: .1s;
-      -moz-animation-delay: .1s;
-      -webkit-animation-direction: alternate;
-
-      animation-direction: alternate;
-      animation-delay: alternate;
-    }
-
-    .doi
-    {
-      -webkit-animation-delay: .2s;
-      -moz-animation-delay: .2s;
-      -webkit-animation-direction: alternate;
-
-      animation-delay: .2s;
-      animation-direction: alternate;
-
-      margin-top: -6px;
-    }
-
-    .trei
-    {
-      -webkit-animation-delay: .3s;
-      -moz-animation-delay: .3s;
-      -webkit-animation-direction: alternate;
-
-      animation-delay: .3s;
-      animation-direction: alternate;
-
-
-      margin-top: -6px;
-    }
-
-    .mouse {
-      height: 42px;
-      width: 24px;
-      border-radius: 14px;
-      transform: none;
-      border: 2px solid white;
-      top: 170px;
-    }
-
-    .wheel {
-      height: 5px;
-      width: 2px;
-      display: block;
-      margin: 5px auto;
-      background: white;
-      position: relative;
-
-      height: 4px;
-      width: 4px;
-      border: 2px solid #fff;
-      -webkit-border-radius: 8px;
-      border-radius: 8px;
-    }
-
-    .wheel {
-      -webkit-animation: mouse-wheel 0.6s linear infinite;
-      -moz-animation: mouse-wheel 0.6s linear infinite;
-      animation: mouse-wheel 0.6s linear infinite;
-    }
-
-    @-webkit-keyframes mouse-wheel{
-     0% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0);
-    }
-
-    100% {
-      opacity: 0;
-      -webkit-transform: translateY(6px);
-      -ms-transform: translateY(6px);
-      transform: translateY(6px);
-    }
+@media (min-width:992px){
+  .nav-link:hover::after{
+    content:"";
+    display: block;
+    border-bottom: 2px solid #fff;
+    width: 50%;
+    padding-bottom: 5px;
+    margin-bottom: -7px;
   }
-  @-moz-keyframes mouse-wheel {
-    0% { top: 1px; }
-    25% { top: 2px; }
-    50% { top: 3px;}
-    75% { top: 2px;}
-    100% { top: 1px;}
+  .logo1{margin-top:70px;}
+
+}
+
+/*Mobile Version*/
+@media only screen and (max-width: 600px){
+  .logo1{margin-top:70px;}
+  .about{
+    text-align: center;
   }
-  @-o-keyframes mouse-wheel {
-
-   0% { top: 1px; }
-   25% { top: 2px; }
-   50% { top: 3px;}
-   75% { top: 2px;}
-   100% { top: 1px;}
- }
- @keyframes mouse-wheel {
-
-   0% { top: 1px; }
-   25% { top: 2px; }
-   50% { top: 3px;}
-   75% { top: 2px;}
-   100% { top: 1px;}
- }
-
- @-webkit-keyframes mouse-scroll {
-
-  0%   { opacity: 0;}
-  50%  { opacity: .5;}
-  100% { opacity: 1;}
+  .about h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-top: 20PX;
+    font-weight: 700PX!important;
+  }
+  .line{
+    text-align: center;
+  }
 }
-@-moz-keyframes mouse-scroll {
 
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
+.visi{
+  margin-top: 20px;
+  font-weight: 600px;
+  font-size: 14px;
 }
-@-o-keyframes mouse-scroll {
-
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
+.line{
+  border-bottom: 2px solid #009b4c;
+  width: 3%;
 }
-@keyframes mouse-scroll {
-
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
+.info-panel{
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin-top:-130px;
+  padding: 30px;
+}
+.info-panel img{
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.info-panel h4{
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 </style>
- 
+
 </head>
 <!-- Modal -->
 <div class="modal fade in" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -263,7 +161,7 @@
             <label  class="form-label">NO HP/WA</label>
             <input type="number" name="telp" class="form-control">
           </div>
-  
+
           <div class="mb-3">
             <label class="form-label">Pekerjaan</label>
             <select class="form-select" name="pekerjaan" aria-label=".form-select-lg example">
@@ -370,165 +268,270 @@
     </nav>
     <!-- akhri navbar -->
     <div class="header mt-8">
-      <!--Content before waves-->
-      <div class="inner-header flex">
-        <!--Just the logo.. Don't mind this-->
-        <svg version="1.1" class="logo" baseprofile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 500 500" xml:space="preserve">
-        <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
-        <g><path fill="#fff"
-          d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
-          C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
-          c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7    c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2  c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
-        </path></g>
-      </path></svg>
-    </div>
-    <div class="container">
-      <div class="row">
-        <img src="images/logo.png" class="img-fluid p-5" alt="ptsp kemenag oki">
-        <div class="mouse_scroll">
-          <div class="mouse">
-            <div class="wheel"></div>
-          </div>
-          <div>
-            <span class="m_scroll_arrows unu"></span>
-            <span class="m_scroll_arrows doi"></span>
-            <span class="m_scroll_arrows trei"></span>
-          </div>
-        </div>
-      </div>
-    </div>      
-    <!--Waves Container-->
-    <div>
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
-      <defs>
-        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-      </path></defs>
-      <g class="parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-      </use></use></use></use></g>
-    </svg>
-  </div>
-  <!--Waves end-->
-  <ul class="dani-circle">
-    <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
-  </div>
-  <!--Header ends-->
-  <br><br>
-  <!-- TAMU -->
-  <div class="container" id="batas">
-    <div class="row">
-      <div class="col-md-3 mx-auto text-center">
-
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-          BUKU TAMU
-        </button>      
-      </div>
-    </div>
-  </div>
-  <br><br>
-
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-8 mt-5" id='kontak'>
-        <iframe allowfullscreen='' aria-hidden='false' frameborder='0' height='350' src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1991.4383780381186!2d104.82599543054963!3d-3.380280427989871!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x42f26970f827341d!2sKEMENAG%20KAB%20OKI!5e0!3m2!1sid!2sid!4v1605406432367!5m2!1sid!2sid' style='border:0;' tabindex='0' width='100%'></iframe>
-      </div>
-      <div class="col-md-4 mt-5">
-        <div class="card">
-          <div class="card-header text-light bg-primary text-center">
-            KONTAK KAMI
-          </div>
-          <div class="card-body">
-            <div class="container">
-
-              <img src="https://1.bp.blogspot.com/-a2xyjeeFe2M/YF9oyeoMfwI/AAAAAAAABc0/2YqOpnDfV5EcaF6XjvHVk7ywn5jwohvOgCLcBGAsYHQ/s0/1.png" class="rounded mx-auto d-block" alt="logoKemenag" width="120px" />
-              <ul class="navbar-nav text-center">
-                <li class="nav-item text-success">KEMENTERIAN AGAMA</li>
-                <li class="nav-item">Kabupaten Ogan Komering Ilir</li>
-                <li class="nav-item">Jl.Letnan Mukhtar Saleh No.087</li>
-                <li>Kayuagung 30611</li>
-              </ul>
+      <div class="container">
+        <div class="row">
+          <img src="images/logo.png" class="img-fluid logo1" alt="ptsp kemenag oki">
+          <div class="mouse_scroll">
+            <div class="mouse">
+              <div class="wheel"></div>
+            </div>
+            <div>
+              <span class="m_scroll_arrows unu"></span>
+              <span class="m_scroll_arrows doi"></span>
+              <span class="m_scroll_arrows trei"></span>
             </div>
           </div>
         </div>
+      </div>      
+      <!--Waves Container-->
+      <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </path></defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </use></use></use></use></g>
+      </svg>
+    </div>
+    <!--Waves end-->
+    <ul class="dani-circle">
+      <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+    </div>
+    <!--Header ends-->
+    <br><br>
+
+    <!-- TAMU -->
+    <div class="container" id="batas">
+      <div class="row">
+        <div class="col-md-3 mx-auto text-center">
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            BUKU TAMU
+          </button>      
+        </div>
       </div>
+    </div>
+    <br><br>
+
+    <div class="container about">
+      <div class="row " id="profil">
+        <div class="col-lg-6">
+          <img src="images/bg.jpg" class="img-fluid rounded-circle shadow p-2 mb-5 bg-body rounded">
+        </div>
+
+        <div class="col-lg-5">
+          <figure class="text-center mt-2">
+            <blockquote class="blockquote">
+              <p class="text-success">PROFIL PTSP</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Fugiat, sit.</p>
+            </cite>
+          </figcaption>
+        </figure>
+      </div>
+
     </div>
   </div>
 
-  <footer class="stm-footer-wrapper" id="dani-trueurl" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
-    <div class="mt-footer" role="contentinfo">
-      <ul class="dani-circle">
-        <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
-        © <script type="text/javascript">var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> KEMENAG OKI
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="panel-info border-success p-2 m-2" id="visimisi">
+      <figure class="text-center mt-2">
+        <blockquote class="blockquote">
+          <p class="text-success">Visi &amp; Misi</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Dengan ini kami menyatakan <cite title="Source Title">
+            sanggup menyenggarakan pelayanan dengan sepenuh hati dan sesuai dengan standar pelayanan yang telah ditetapkan. Apabila tidak menepati janji, kami siap meneri sanksi sesuai ketentuan yang berlaku.
+          </cite>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg">
+      <div class="panel-info border-success p-2 m-2" id="persyaratan">
+        <figure class="text-center mt-2">
+          <blockquote class="blockquote">
+            <p class="text-success">Persyaratan Layanan</p>
+          </blockquote>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Cras justo odio</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </figure>
       </div>
-    </footer>
+    </div>
+  </div>
+</div>
 
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwIOLKKGErs4rSi4KepJFhDxTIFrRE7V5mKx7ir_QN9sORA6F_IPd83zzC5iUcikeNl/exec'
-      const form = document.forms['buku-tamu']
-      const btnKirim = document.querySelector('.btn-kirim');
-      const btnProses = document.querySelector('.btn-proses');
-      const myData = document.querySelector('.my-data');
-      const btnBatal = document.querySelector('.btn-batal');
 
-      form.addEventListener('submit', e => {
-        e.preventDefault()
+
+<div class="container">
+  <div class="row">
+    <div class="panel-info border-success p-2 m-2" id="maklumat">
+      <figure class="text-center mt-2">
+        <blockquote class="blockquote">
+          <p class="text-success">Maklumat Layanan</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Dengan ini kami menyatakan <cite title="Source Title">
+            sanggup menyenggarakan pelayanan dengan sepenuh hati dan sesuai dengan standar pelayanan yang telah ditetapkan. Apabila tidak menepati janji, kami siap meneri sanksi sesuai ketentuan yang berlaku.
+          </cite>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-8 mt-5" id='kontak'>
+      <iframe allowfullscreen='' aria-hidden='false' frameborder='0' height='350' src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1991.4383780381186!2d104.82599543054963!3d-3.380280427989871!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x42f26970f827341d!2sKEMENAG%20KAB%20OKI!5e0!3m2!1sid!2sid!4v1605406432367!5m2!1sid!2sid' style='border:0;' tabindex='0' width='100%'></iframe>
+    </div>
+    <div class="col-md-4 mt-5">
+      <div class="card">
+        <div class="card-header text-light bg-primary text-center">
+          KONTAK KAMI
+        </div>
+        <div class="card-body">
+          <div class="container">
+
+            <img src="https://1.bp.blogspot.com/-a2xyjeeFe2M/YF9oyeoMfwI/AAAAAAAABc0/2YqOpnDfV5EcaF6XjvHVk7ywn5jwohvOgCLcBGAsYHQ/s0/1.png" class="rounded mx-auto d-block" alt="logoKemenag" width="120px" />
+            <ul class="navbar-nav text-center">
+              <li class="nav-item text-success">KEMENTERIAN AGAMA</li>
+              <li class="nav-item">Kabupaten Ogan Komering Ilir</li>
+              <li class="nav-item">Jl.Letnan Mukhtar Saleh No.087</li>
+              <li>Kayuagung 30611</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="stm-footer-wrapper" id="dani-trueurl" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
+  <div class="mt-footer" role="contentinfo">
+    <ul class="dani-circle">
+      <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+      © <script type="text/javascript">var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> KEMENAG OKI
+    </div>
+  </footer>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwIOLKKGErs4rSi4KepJFhDxTIFrRE7V5mKx7ir_QN9sORA6F_IPd83zzC5iUcikeNl/exec'
+    const form = document.forms['buku-tamu']
+    const btnKirim = document.querySelector('.btn-kirim');
+    const btnProses = document.querySelector('.btn-proses');
+    const myData = document.querySelector('.my-data');
+    const btnBatal = document.querySelector('.btn-batal');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
 //proses 
+      btnProses.classList.toggle('d-none')
+      btnKirim.classList.toggle('d-none')
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {console.log('Success!', response)
+//proses data 
         btnProses.classList.toggle('d-none')
         btnKirim.classList.toggle('d-none')
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {console.log('Success!', response)
-//proses data 
-          btnProses.classList.toggle('d-none')
-          btnKirim.classList.toggle('d-none')
-          myData.classList.toggle('d-none')
-          btnBatal.classList.toggle('d-none')
-          form.reset();
-        })
-        .catch(error => console.error('Error!', error.message))
+        myData.classList.toggle('d-none')
+        btnBatal.classList.toggle('d-none')
+        form.reset();
       })
-    </script>
+      .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
-  
- <script>
-      $(document).ready(function(){
-        $("select").change(function(){
-          $(this).find("option:selected").each(function(){
-            var optionValue = $(this).attr("value");
-            if(optionValue){
-              $(".lain").not("." + optionValue).hide();
-              $("." + optionValue).show();
-            } else{
-              $(".lain").hide();
-            }
-          });
-        }).change();
-      });
-    </script>  
-    <script>
-      $(document).ready(function(){
-        $("select").change(function(){
-          $(this).find("option:selected").each(function(){
-            var optionValue = $(this).attr("value");
-            if(optionValue){
-              $(".kotak").not("." + optionValue).hide();
-              $("." + optionValue).show();
-            } else{
-              $(".kotak").hide();
-            }
-          });
-        }).change();
-      });
-    </script>
-    <script>
-      var staticBackdrop = new bootstrap.Modal(document.getElementById('staticBackdrop'), {})
-      staticBackdrop.show()
-    </script>
-  </body>
-  </html>
+
+  <script>
+    $(document).ready(function(){
+      $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+          var optionValue = $(this).attr("value");
+          if(optionValue){
+            $(".lain").not("." + optionValue).hide();
+            $("." + optionValue).show();
+          } else{
+            $(".lain").hide();
+          }
+        });
+      }).change();
+    });
+  </script>  
+  <script>
+    $(document).ready(function(){
+      $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+          var optionValue = $(this).attr("value");
+          if(optionValue){
+            $(".kotak").not("." + optionValue).hide();
+            $("." + optionValue).show();
+          } else{
+            $(".kotak").hide();
+          }
+        });
+      }).change();
+    });
+  </script>
+  <script>
+    var staticBackdrop = new bootstrap.Modal(document.getElementById('staticBackdrop'), {})
+    staticBackdrop.show()
+  </script>
+</body>
+</html>
