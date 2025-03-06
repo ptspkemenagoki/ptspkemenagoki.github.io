@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Pendaftaran</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		
+		.form-container {
+			width: 300px;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		}
+		
+		.form-title {
+			font-weight: bold;
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		
+		.form-group {
+			margin-bottom: 15px;
+		}
+		
+		.form-label {
+			display: block;
+			margin-bottom: 5px;
+		}
+		
+		.form-input {
+			width: 100%;
+			height: 30px;
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		
+		.form-button {
+			width: 100%;
+			height: 35px;
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.form-button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<div class="form-container">
+			<h2 class="form-title">Form Pendaftaran</h2>
+			<form>
+				<div class="form-group">
+					<label class="form-label" for="nama">Nama Lengkap</label>
+					<input class="form-input" type="text" id="nama" name="nama" required>
+				</div>
+				<div class="form-group">
+					<label class="form-label" for="nama">Alamat</label>
+					<input class="form-input" type="text" id="alamat" name="alamat" required>
+				</div>
+				<div class="form-group">
+					<label class="form-label" for="email">Email</label>
+					<input class="form-input" type="email" id="email" name="email" required>
+				</div>
+				<div class="form-group">
+					<label class="form-label" for="password">Password</label>
+					<input class="form-input" type="password" id="password" name="password" required>
+				</div>
+				<div class="form-group">
+					<label class="form-label" for="telepon">Nomor Telepon</label>
+					<input class="form-input" type="number" id="telepon" name="telepon" required>
+				</div>
+				<div class="form-group">
+					<textarea class="form"></textarea>
+					<input class="form-input" type="text" id="nama" name="nama" required>
+				</div>
+				<button class="form-button" type="submit">Daftar</button>
+			</form>
+		</div>
+	</center>
+</body>
+</html>
