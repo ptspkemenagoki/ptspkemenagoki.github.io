@@ -31,7 +31,7 @@ function getJadwalSholat() {
 	.then ( data => {
 		const jadwal = data.data.jadwal
 		// console.log(jadwal)
-		document.getElementById('imsak').textContent = jadwal.imsak
+		// document.getElementById('imsak').textContent = jadwal.imsak
 		document.getElementById('subuh').textContent = jadwal.subuh
 		document.getElementById('dzuhur').textContent = jadwal.dzuhur
 		document.getElementById('ashar').textContent = jadwal.ashar
