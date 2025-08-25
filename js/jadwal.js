@@ -33,6 +33,7 @@ function getJadwalSholat() {
 		// console.log(jadwal)
 		// document.getElementById('imsak').textContent = jadwal.imsak
 		document.getElementById('subuh').textContent = jadwal.subuh
+		document.getElementById('dhuha').textContent = jadwal.dhuha
 		document.getElementById('dzuhur').textContent = jadwal.dzuhur
 		document.getElementById('ashar').textContent = jadwal.ashar
 		document.getElementById('maghrib').textContent = jadwal.maghrib
